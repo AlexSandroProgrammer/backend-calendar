@@ -5,13 +5,13 @@ require("dotenv").config();
 
 // import cors
 const cors = require("cors");
-// const { dbConnection } = require("./database/connection");
+const { dbConnection } = require("./database/connection");
 
 // crear el servidor de express
 const app = express();
 
 // llamamos la conexion a la base de datos
-// dbConnection();
+dbConnection();
 
 // llamamos los cors
 app.use(cors());
