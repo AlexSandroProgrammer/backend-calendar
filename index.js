@@ -19,9 +19,9 @@ app.use(cors());
 // lectura y parseo del body
 app.use(express.json());
 
-//* Routes
-
+//* Authentication routes
 app.use("/api/auth", require("./routes/auth"));
+// * Routes Events
 app.use("/api/events", require("./routes/events"));
 
 // escuchar peticiones
